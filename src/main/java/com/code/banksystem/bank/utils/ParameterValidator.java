@@ -28,7 +28,7 @@ public class ParameterValidator {
     }
 
     public static boolean isValidPhoneNumber(String phoneNumber){
-        String localPattern = "^07[238]\\d{7}$";
+        String localPattern = "^07[2389]\\d{7}$";
         String internationalPattern = "^\\+2507[238]\\d{7}";
         return phoneNumber.matches(localPattern) || phoneNumber.matches(internationalPattern);
     }
