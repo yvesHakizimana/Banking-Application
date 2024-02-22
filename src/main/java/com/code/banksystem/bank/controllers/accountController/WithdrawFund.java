@@ -41,8 +41,12 @@ public class WithdrawFund extends HttpServlet {
         System.out.println("Customer ID: " + customerId);
 
         double amount = Double.parseDouble(request.getParameter("withdraw"));
-        System.out.println("Withdraw Amount: " + amount);
-        System.out.println("Account Balance: " + account.getBalance());
+        if(amount < 0) {
+            String message = "The amount can not be less than 0";
+            request.setAttribute("withdrawError", message);
+            request.getRequestDispatcher("withdrawFund.jsp").forward(request, response);
+            return; 
+        }
 
         // Check if account type is "saving" and last withdrawal was more than a month ago
         boolean canWithdraw = userCanWithdraw(account);
