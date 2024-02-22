@@ -1,5 +1,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -81,7 +80,7 @@
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="phoneNumber">PhoneNumber:</label>
-            <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" required>
+            <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="Like 07[9238]xxxxxxx" required>
             <c:if test="${phoneNumberError != null}">
                 <p style="color: red"><c:out value="${phoneNumberError}"/> </p>
             </c:if>
