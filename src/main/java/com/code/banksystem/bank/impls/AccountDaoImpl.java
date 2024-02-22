@@ -4,6 +4,8 @@ import com.code.banksystem.bank.config.Dbutil;
 import com.code.banksystem.bank.config.HandleExceptions;
 import com.code.banksystem.bank.daos.AccountDao;
 import com.code.banksystem.bank.models.Account;
+import com.code.banksystem.bank.models.User;
+
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,6 +19,10 @@ public class AccountDaoImpl implements AccountDao {
 
     private static final String GET_ACCOUNT_BY_C_ID_SQL = "select account_id, account_type, balance, customer_id, last_withdrawal_date from account where customer_id = ?";
     private static final String UPDATE_AMOUNT_BY_C_ID = "update account set balance = ? , last_withdrawal_date = ? where customer_id = ?";
+    private static final String GET_USER_INFO_BY_ACCOUNT_ID = "select first_name, last_name, phonenumber, file_path from get_customer_info(?)";
+    private static final String GET_ACCOUNT_BY_USERNAME = "select account_id, customer_id, account_type, balance from get_account_by_username(?)";
+    private static final String GET_ACCOUNT_BY_ACCOUNT_ID = "select account_id, customer_id, account_type, balance from get_account_by_id(?)";
+
     public AccountDaoImpl(){
         this.dbutil = new Dbutil();
     }
@@ -59,6 +65,64 @@ public class AccountDaoImpl implements AccountDao {
             HandleExceptions.handleSqlExceptions(ex);
         }
         return rowsUpdated;
+    }
+
+    @Override
+    public User getUserDetailsByAccountId(UUID accountId) {
+        User user = null;
+        try(PreparedStatement statement = dbutil.connectToDB().prepareStatement(GET_USER_INFO_BY_ACCOUNT_ID)){
+            statement.setObject(1, accountId);
+            ResultSet rs  = statement.executeQuery();
+            while(rs.next()){
+                String firstName = rs.getString("first_name");
+                String lastName = rs.getString("last_name");
+                int phoneNumber  = rs.getInt("phonenumber");
+                String filePath = rs.getString("file_path");
+                user = new User(firstName, lastName, phoneNumber, filePath);
+            }
+
+        } catch (SQLException ex){
+            HandleExceptions.handleSqlExceptions(ex);
+        }
+        return user;
+    }
+
+    @Override
+    public Account getAccountByUsername(String username) {
+        Account account = new Account();
+        try(PreparedStatement statement = dbutil.connectToDB().prepareStatement(GET_ACCOUNT_BY_USERNAME)){
+            statement.setString(1, username);
+            ResultSet rs = statement.executeQuery();
+            while(rs.next()){
+                UUID account_id = (UUID) rs.getObject("account_id");
+                int customer_id = rs.getInt("customer_id");
+                String account_type = rs.getString("account_type");
+                double balance = rs.getDouble("balance");
+                account = new Account(account_id, customer_id, account_type, balance);
+            }
+        } catch (SQLException ex){
+            HandleExceptions.handleSqlExceptions(ex);
+        }
+        return account;
+    }
+
+    @Override
+    public Account getAccountByAccountId(UUID accountId) {
+        Account account  = null;
+        try(PreparedStatement statement = dbutil.connectToDB().prepareStatement(GET_ACCOUNT_BY_ACCOUNT_ID)){
+            statement.setObject(1, accountId);
+            ResultSet rs = statement.executeQuery();
+            while(rs.next()){
+                UUID account_id = (UUID) rs.getObject("account_id");
+                int customer_id = rs.getInt("customer_id");
+                String account_type = rs.getString("account_type");
+                double balance = rs.getDouble("balance");
+                account = new Account(account_id, customer_id, account_type, balance);
+            }
+        } catch (SQLException ex){
+            HandleExceptions.handleSqlExceptions(ex);
+        }
+        return account;
     }
 
 }
