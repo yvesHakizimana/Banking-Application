@@ -16,10 +16,10 @@
 <body>
 <form action="withdraw-fund" method="post">
     <div class="form-group col-md-6">
-        <label for="deposit">Amount to withdraw: </label>
-        <input type="text" id="deposit" name="withdraw" class="form-control" required>
-        <c:if test="${message != null}">
-            <p class="text-danger">${message}</p>
+        <label for="withdraw">Amount to withdraw: </label>
+        <input type="text" id="withdraw" name="withdraw" class="form-control" required>
+        <c:if test="${withdrawError != null}">
+            <p class="text-danger">${withdrawError}</p>
         </c:if>
     </div>
     <button class="btn btn-primary">Withdraw</button>
