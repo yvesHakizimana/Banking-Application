@@ -3,6 +3,8 @@ package com.code.banksystem.bank.models;
 
 
 public class User {
+
+
     private Integer customer_id;
     private String first_name;
     private String last_name;
@@ -34,6 +36,15 @@ public class User {
         this.email = email;
         this.password = password;
     }
+
+    public User(String first_name, String last_name, Integer phoneNumber, String profilePictureUrl) {
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.phoneNumber = phoneNumber;
+        this.profilePictureUrl = profilePictureUrl;
+    }
+
+
 
     public Integer getCustomer_id() {
         return customer_id;
