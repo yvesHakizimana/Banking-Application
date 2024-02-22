@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="bank:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9fa4013a-e9ce-4fa3-840d-53bf8087c841" name="Changes" comment="ParameterValidator">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/#/withdrawFund.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/bank.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2cHBIFdwOTKwiX1Qqlmy53CXSKu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.85.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/cyberknight/Documents/Java/BankingSystem/bank&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.1908046&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/#" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/AccountPages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.85">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.code.banksystem.bank.utils.Main" />
+      <module name="bank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.code.banksystem.bank.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="get_accounts_created@().sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="/9236d242/d7044959-ee0a-418d-bb6b-1a48099418f6/database/banksystem/schema/public/routine/get_accounts_created@().sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 9.0.85" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.85" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="bank:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/bank_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="cf3ab7bb-f447-4441-93d6-43715165cc3c" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="36211" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="bank:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Database Script.get_accounts_created@().sql" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9fa4013a-e9ce-4fa3-840d-53bf8087c841" name="Changes" comment="" />
+      <created>1707758543953</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707758543953</updated>
+      <workItem from="1707758545098" duration="4596000" />
+      <workItem from="1707763798110" duration="6289000" />
+      <workItem from="1707827816980" duration="962000" />
+      <workItem from="1707830585664" duration="19111000" />
+      <workItem from="1707897573834" duration="16449000" />
+      <workItem from="1707934538540" duration="5168000" />
+      <workItem from="1707941353386" duration="3192000" />
+      <workItem from="1707974268342" duration="29525000" />
+      <workItem from="1708020650504" duration="3367000" />
+      <workItem from="1708024026778" duration="19000" />
+      <workItem from="1708024070248" duration="8510000" />
+      <workItem from="1708061100917" duration="57000" />
+      <workItem from="1708061164998" duration="4849000" />
+      <workItem from="1708066276441" duration="388000" />
+      <workItem from="1708066682852" duration="22000" />
+      <workItem from="1708070354140" duration="1721000" />
+      <workItem from="1708073233651" duration="680000" />
+      <workItem from="1708073975686" duration="12612000" />
+      <workItem from="1708169412780" duration="2477000" />
+      <workItem from="1708191365358" duration="6276000" />
+      <workItem from="1708197652601" duration="2134000" />
+      <workItem from="1708267408897" duration="8847000" />
+      <workItem from="1708324793522" duration="1245000" />
+      <workItem from="1708330438966" duration="1843000" />
+      <workItem from="1708334854954" duration="1643000" />
+      <workItem from="1708359217419" duration="8605000" />
+      <workItem from="1708422577705" duration="13000" />
+      <workItem from="1708423055754" duration="4000" />
+      <workItem from="1708436211173" duration="4932000" />
+      <workItem from="1708447886928" duration="4317000" />
+      <workItem from="1708499793981" duration="946000" />
+      <workItem from="1708504064095" duration="15670000" />
+      <workItem from="1708537073707" duration="6608000" />
+      <workItem from="1708629010794" duration="836000" />
+    </task>
+    <task id="LOCAL-00011" summary="Account Dao">
+      <option name="closed" value="true" />
+      <created>1708335014182</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335014182</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Admin login Dao interface">
+      <option name="closed" value="true" />
+      <created>1708335029246</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335029246</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Transaction structure dao">
+      <option name="closed" value="true" />
+      <created>1708335041377</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335041377</updated>
+    </task>
+    <task id="LOCAL-00014" summary="User structure dao">
+      <option name="closed" value="true" />
+      <created>1708335050236</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335050236</updated>
+    </task>
+    <task id="LOCAL-00015" summary="User report dao">
+      <option name="closed" value="true" />
+      <created>1708335058802</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335058802</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Age filter">
+      <option name="closed" value="true" />
+      <created>1708335067747</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335067747</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Impls of daos">
+      <option name="closed" value="true" />
+      <created>1708335085438</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335085438</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Account model">
+      <option name="closed" value="true" />
+      <created>1708335100721</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335100721</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Admin Bean Model">
+      <option name="closed" value="true" />
+      <created>1708335109137</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335109137</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Login Bean Model">
+      <option name="closed" value="true" />
+      <created>1708335123272</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335123272</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Transaction Bean Model">
+      <option name="closed" value="true" />
+      <created>1708335136921</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335136921</updated>
+    </task>
+    <task id="LOCAL-00022" summary="User Bean model">
+      <option name="closed" value="true" />
+      <created>1708335145307</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335145307</updated>
+    </task>
+    <task id="LOCAL-00023" summary="UserReport Details Bean">
+      <option name="closed" value="true" />
+      <created>1708335164615</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335164615</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Parameter Validator util">
+      <option name="closed" value="true" />
+      <created>1708335193393</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335193393</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Password harsher util">
+      <option name="closed" value="true" />
+      <created>1708335204140</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335204140</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Bank system SqlFile">
+      <option name="closed" value="true" />
+      <created>1708335237544</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335237544</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Deposit Fund View">
+      <option name="closed" value="true" />
+      <created>1708335257417</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335257417</updated>
+    </task>
+    <task id="LOCAL-00028" summary="ErrorPage View">
+      <option name="closed" value="true" />
+      <created>1708335268344</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335268344</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Header Page view">
+      <option name="closed" value="true" />
+      <created>1708335278432</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335278432</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Login Admin View">
+      <option name="closed" value="true" />
+      <created>1708335292816</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335292816</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Login User View">
+      <option name="closed" value="true" />
+      <created>1708335301240</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335301240</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Landing Page for the user view">
+      <option name="closed" value="true" />
+      <created>1708335318378</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335318378</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Register page for the user...">
+      <option name="closed" value="true" />
+      <created>1708335329593</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335329593</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Report Summary page view">
+      <option name="closed" value="true" />
+      <created>1708335345539</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335345539</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Update Profile View">
+      <option name="closed" value="true" />
+      <created>1708335354010</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335354010</updated>
+    </task>
+    <task id="LOCAL-00036" summary="User Report View ...">
+      <option name="closed" value="true" />
+      <created>1708335366483</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335366483</updated>
+    </task>
+    <task id="LOCAL-00037" summary="User transactions report view">
+      <option name="closed" value="true" />
+      <created>1708335382487</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335382487</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Withdraw Fund page view">
+      <option name="closed" value="true" />
+      <created>1708335443362</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335443362</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Refactoring code">
+      <option name="closed" value="true" />
+      <created>1708629585661</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629585661</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Refactoring code">
+      <option name="closed" value="true" />
+      <created>1708629591628</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629591628</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Refactoring code">
+      <option name="closed" value="true" />
+      <created>1708629595899</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629595900</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Refactoring code">
+      <option name="closed" value="true" />
+      <created>1708629599505</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629599505</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Refactoring code">
+      <option name="closed" value="true" />
+      <created>1708629603306</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629603306</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Transfer Funds">
+      <option name="closed" value="true" />
+      <created>1708629631698</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629631698</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Withdraw Fund functionality">
+      <option name="closed" value="true" />
+      <created>1708629646698</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629646698</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Refactoring">
+      <option name="closed" value="true" />
+      <created>1708629661298</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629661298</updated>
+    </task>
+    <task id="LOCAL-00047" summary="LoginUser Functionality">
+      <option name="closed" value="true" />
+      <created>1708629670616</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629670616</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Profile Fetch Details functionality">
+      <option name="closed" value="true" />
+      <created>1708629685079</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629685079</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Refactoring data access object">
+      <option name="closed" value="true" />
+      <created>1708629695765</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629695765</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Transaction Data access object">
+      <option name="closed" value="true" />
+      <created>1708629707279</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629707279</updated>
+    </task>
+    <task id="LOCAL-00051" summary="User Data access object">
+      <option name="closed" value="true" />
+      <created>1708629714733</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629714734</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Refactoring code">
+      <option name="closed" value="true" />
+      <created>1708629729372</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629729372</updated>
+    </task>
+    <task id="LOCAL-00053" summary="TransactionDao refactoring code">
+      <option name="closed" value="true" />
+      <created>1708629744302</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629744302</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Listener functionality">
+      <option name="closed" value="true" />
+      <created>1708629765459</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629765459</updated>
+    </task>
+    <task id="LOCAL-00055" summary="SessionListener functionality">
+      <option name="closed" value="true" />
+      <created>1708629777703</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629777704</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Transfer Transaction Model">
+      <option name="closed" value="true" />
+      <created>1708629788933</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629788933</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Refactoring code">
+      <option name="closed" value="true" />
+      <created>1708629797766</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629797767</updated>
+    </task>
+    <task id="LOCAL-00058" summary="User Info refactoring">
+      <option name="closed" value="true" />
+      <created>1708629812120</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629812120</updated>
+    </task>
+    <task id="LOCAL-00059" summary="ParameterValidator">
+      <option name="closed" value="true" />
+      <created>1708629831658</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1708629831659</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Header Page view" />
+    <MESSAGE value="Login Admin View" />
+    <MESSAGE value="Login User View" />
+    <MESSAGE value="Landing Page for the user view" />
+    <MESSAGE value="Register page for the user..." />
+    <MESSAGE value="Report Summary page view" />
+    <MESSAGE value="Update Profile View" />
+    <MESSAGE value="User Report View ..." />
+    <MESSAGE value="User transactions report view" />
+    <MESSAGE value="Withdraw Fund page view" />
+    <MESSAGE value="Transfer Funds" />
+    <MESSAGE value="Withdraw Fund functionality" />
+    <MESSAGE value="Refactoring" />
+    <MESSAGE value="LoginUser Functionality" />
+    <MESSAGE value="Profile Fetch Details functionality" />
+    <MESSAGE value="Refactoring data access object" />
+    <MESSAGE value="Transaction Data access object" />
+    <MESSAGE value="User Data access object" />
+    <MESSAGE value="TransactionDao refactoring code" />
+    <MESSAGE value="Listener functionality" />
+    <MESSAGE value="SessionListener functionality" />
+    <MESSAGE value="Transfer Transaction Model" />
+    <MESSAGE value="Refactoring code" />
+    <MESSAGE value="User Info refactoring" />
+    <MESSAGE value="ParameterValidator" />
+    <option name="LAST_COMMIT_MESSAGE" value="ParameterValidator" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
