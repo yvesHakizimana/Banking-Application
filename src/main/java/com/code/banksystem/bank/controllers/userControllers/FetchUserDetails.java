@@ -48,6 +48,5 @@ public class FetchUserDetails extends HttpServlet {
             session.setAttribute("transactions", transactions);
             response.sendRedirect("mainMenu.jsp");
         }
-
     }
 }
