@@ -77,6 +77,7 @@
                         <a class="dropdown-item" href="depositFund.jsp">Deposit Funds</a>
                         <a class="dropdown-item" href="withdrawFund.jsp">Withdraw Funds</a>
                         <a class="dropdown-item" href="user-transaction">View Transaction History</a>
+                        <a class="dropdown-item" href="transferFunds.jsp">Transfer Funds</a>
                     </div>
                 </li>
                 <li class="nav-item">
