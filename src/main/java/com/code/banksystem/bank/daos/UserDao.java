@@ -13,5 +13,4 @@ public interface UserDao {
     boolean updateUser(User user);
     boolean validate(LoginBean loginBean);
     boolean checkUserExists(String username);
-
 }
