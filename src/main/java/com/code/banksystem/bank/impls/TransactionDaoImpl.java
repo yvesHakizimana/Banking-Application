@@ -4,6 +4,7 @@ import com.code.banksystem.bank.config.Dbutil;
 import com.code.banksystem.bank.config.HandleExceptions;
 import com.code.banksystem.bank.daos.TransactionDao;
 import com.code.banksystem.bank.models.Transaction;
+import com.code.banksystem.bank.models.TransferTransaction;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public class TransactionDaoImpl implements TransactionDao {
 
     private static final String GET_TRANSACTIONS_BY_ACCOUNT = "select transaction_id, transaction_type, amount, transaction_date from transaction where account_id = ?";
     private static final String GET_TRANSACTIONS_BY_USER  = "select transaction_type, amount, transaction_date, account_type from transaction where customer_id = ?";
+    private static final String INSERT_TRANSFER_TRANSACTIONS = "insert into transfer_transactions(sender_account_id, receiver_account_id, amount, transaction_timestamp) values  (?, ?, ?, ?)";
 
     public TransactionDaoImpl(){
         this.dbutil = new Dbutil();
@@ -58,6 +60,21 @@ public class TransactionDaoImpl implements TransactionDao {
             HandleExceptions.handleSqlExceptions(ex);
         }
         return userTransactions;
+    }
+
+    @Override
+    public boolean insertTransactionIntoDatabase(TransferTransaction transaction) {
+        boolean result = false;
+        try(PreparedStatement callableStatement = dbutil.connectToDB().prepareStatement(INSERT_TRANSFER_TRANSACTIONS)){
+            callableStatement.setObject(1, transaction.getSenderAccountId());
+            callableStatement.setObject(2, transaction.getReceiverAccountId());
+            callableStatement.setDouble(3, transaction.getAmount());
+            callableStatement.setTimestamp(4, transaction.getTransaction_timestamp());
+            result = callableStatement.executeUpdate() > 0;
+        } catch (SQLException ex){
+            HandleExceptions.handleSqlExceptions(ex);
+        }
+        return result;
     }
 
 }
